@@ -25,8 +25,8 @@
 <section id="own" class="page"><button class="secondary back" data-go="home">← Vissza</button><div class="card"><h2>Saját személyek</h2><div id="ownList" class="list"></div><button id="showForm" style="width:100%;margin-top:14px">Személy hozzáadása</button><div class="actions"><button id="exportOwn" class="secondary">Saját lista mentése</button><button id="importOwnBtn" class="secondary">Saját lista betöltése</button></div><input id="importOwnFile" type="file" accept="application/json,.json" hidden><div id="ownTransferNotice" class="notice"></div></div><div id="ownFormCard" class="card" hidden><h2 id="formTitle">Új személy</h2><input id="editId" type="hidden"><label class="input">Teljes név<input id="fName" type="text" required></label><label class="select">Kategória<select id="fCategory"></select></label><label class="input">Születési dátum<input id="fBirth" type="date"></label><label class="input">Szentelési dátum<input id="fOrdination" type="date"></label><label class="input">Névnap<input id="fNameday" type="date"></label><label class="input">Halálozási dátum<input id="fDeath" type="date"></label><label class="input">Szentelési idézet<textarea id="fQuote"></textarea></label><div class="actions"><button id="saveOwn">Mentés</button><button id="cancelOwn" class="secondary">Mégse</button></div><div id="ownNotice" class="notice"></div></div></section>
 <footer class="note" style="margin-top:22px;padding-top:14px;border-top:1px solid var(--line)">
 <p style="margin:0 0 8px">A központi adatbázis az importált atyák adatait tartalmazza. A saját adatok ezen az eszközön, a böngészőben tárolódnak.</p>
-<p style="margin:3px 0 0">Verzió: 20261002_192007</p>
-<p id="databaseUpdated" style="margin:3px 0 0">Adatbázis frissítése: betöltés…</p>
+<p style="margin:3px 0 0">Verzió: 20261002_193810</p>
+<p id="databaseUpdated" style="margin:3px 0 0">Adatbázis frissítése: 2026. október 2.</p>
 </footer></main>
 <script>
 const CATS=["Aktív","Nyugdíjas","Szolgálaton kívül","Papnövendék","Elhunyt"];
@@ -55,7 +55,7 @@ async function loadCentralDatabase(){
     if(!Array.isArray(data))throw new Error("Az adatfájl nem tartalmaz személylistát.");
     central=data.map(p=>({...p,source:"Központi adatbázis",category:String(p.category||"").trim()}));
     centralLoaded=true;
-    updated.textContent=`Adatbázis frissítése: ${formatDatabaseDate(Array.isArray(payload)?"":payload.updatedAt)}`;
+    updated.textContent=`Adatbázis frissítése: ${formatDatabaseDate(Array.isArray(payload)?"":(payload.updatedAt||payload.databaseVersion||""))}`;
     status.textContent=`A központi adatbázis betöltve: ${central.length} személy.`;
     status.className="notice";
     status.style.display="block";
