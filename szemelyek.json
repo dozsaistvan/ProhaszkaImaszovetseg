@@ -1,6 +1,6 @@
 {
-  "databaseVersion": "2026-10-02",
-  "updatedAt": "2026-10-02",
+  "databaseVersion": "2026-10-05",
+  "updatedAt": "2026-10-05",
   "people": [
     {
       "id": "c1",
@@ -77,7 +77,7 @@
       "ordination": "",
       "nameday": "2026-03-19",
       "death": "",
-      "quote": ""
+      "quote": "Szeressük egymást, mert a szeretet Istentől van. (1Ján 4,7)"
     },
     {
       "id": "c8",
@@ -88,7 +88,7 @@
       "ordination": "",
       "nameday": "2026-11-04",
       "death": "",
-      "quote": ""
+      "quote": "Íme, én veletek vagyok a világ végéig. (Mt 28,20)"
     },
     {
       "id": "c9",
@@ -154,7 +154,7 @@
       "ordination": "",
       "nameday": "2026-09-05",
       "death": "",
-      "quote": ""
+      "quote": "Én vagyok a feltámadás és az élet. (Jn 11,25)"
     },
     {
       "id": "c15",
@@ -866,10 +866,10 @@
       "name": "Tóth Tamás",
       "category": "Aktív",
       "birth": "1974-03-08",
-      "ordination": "",
+      "ordination": "1998-06-24",
       "nameday": "2026-03-07",
       "death": "",
-      "quote": ""
+      "quote": "Örömhírt vigyek a szegényeknek (Lk 4,18)"
     },
     {
       "id": "c80",
