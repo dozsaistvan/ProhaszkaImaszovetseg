@@ -1,6 +1,6 @@
 {
-  "databaseVersion": "2026-10-05",
-  "updatedAt": "2026-10-05",
+  "databaseVersion": "2026-11-06",
+  "updatedAt": "2026-11-06",
   "people": [
     {
       "id": "c1",
@@ -369,7 +369,7 @@
       "id": "c34",
       "source": "Központi adatbázis",
       "name": "Kertész Péter",
-      "category": "Aktív",
+      "category": "Nyugdíjas",
       "birth": "1953-10-28",
       "ordination": "",
       "nameday": "2026-06-29",
@@ -912,6 +912,28 @@
       "birth": "1974-09-19",
       "ordination": "",
       "nameday": "2026-11-04",
+      "death": "",
+      "quote": ""
+    },
+    {
+      "id": "c84",
+      "source": "Központi adatbázis",
+      "name": "Koller Péter Bálint",
+      "category": "Papnövendék",
+      "birth": "",
+      "ordination": "",
+      "nameday": "",
+      "death": "",
+      "quote": ""
+    },
+    {
+      "id": "c85",
+      "source": "Központi adatbázis",
+      "name": "Rákóczi Ferenc Ákos",
+      "category": "Papnövendék",
+      "birth": "",
+      "ordination": "",
+      "nameday": "",
       "death": "",
       "quote": ""
     }
